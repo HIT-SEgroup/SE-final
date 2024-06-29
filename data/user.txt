@@ -1,0 +1,6 @@
+{"username":"tea1","password":"111111","role":"teacher"}
+{"username":"tea2","password":"111111","role":"teacher"}
+{"username":"stu1","password":"111111","role":"student"}
+{"username":"adm1","password":"111111","role":"admin"}
+{"username":"adm2","password":"111111","role":"admin"}
+{"username":"stu2","password":"111111","role":"student"}

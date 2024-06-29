@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>组卷系统</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+        .header-btn {
+          position: absolute;
+          top: 10px;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          padding: 5px 10px;
+          border-radius: 5px;
+          font-size: 16px;
+        }
+        .return-btn {
+            left: 10px;
+        }
+        .preview-btn {
+            right: 10px; 
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 50px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: #ddd;
+        }
+        button {
+            margin-left: 5px;
+        }
+
+        .preview-link {
+            color: #007bff;
+            text-decoration: none;
+            cursor: default; 
+        }
+
+        
+    </style>
+</head>
+<body>
+    <button class="header-btn return-btn" onclick="location.href='login.html';">返回</button>
+    <button class="header-btn preview-btn" onclick="previewExam()">组卷预览</button>
+    <h1 style="text-align: center;">组卷系统</h1>
+    <div id="examPreview"></div>
+    <table id="table">
+        <tr>
+            <th>序号</th>
+            <th>题目</th>
+            <th>题目类型</th>
+            <th>答案</th>
+            <th>操作</th>
+        </tr>
+    </table>
+    <script src="./javascript_file/admin.js"></script>
+</body>
+</html>

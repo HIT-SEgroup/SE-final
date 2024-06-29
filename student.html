@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生系统</title>
+    <style>
+         .header-btn {
+          position: absolute;
+          top: 10px;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          padding: 5px 10px;
+          border-radius: 5px;
+          font-size: 16px;
+        }
+        .return-btn {
+            left: 10px;
+        }
+        .review-btn {
+            right: 10px; 
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: #ddd;
+        }
+        button {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button class="header-btn return-btn" onclick="location.href='login.html';">返回</button>
+    <button class="header-btn review-btn" disabled>错题回顾</button>
+    <h1 style="text-align: center;">学生系统</h1>
+    <script src="./javascript_file/student.js"></script>
+</body>
+</html>

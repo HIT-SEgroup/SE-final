@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>题库管理系统</title>
+    <style>
+        .return-btn {
+          position: absolute;
+          top: 10px;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          padding: 5px 10px;
+          border-radius: 5px;
+          font-size: 16px;
+          left: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: #ddd;
+        }
+        button {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button class="header-btn return-btn" onclick="location.href='login.html';">返回</button>
+    <h1 style="text-align: center;">题库管理系统</h1>
+    <button onclick="addRow()">新增数据</button>
+    <table id="table">
+        <tr>
+            <th>序号</th>
+            <th>题目</th>
+            <th>题目类型</th>
+            <th>答案</th>
+            <th>操作</th>
+        </tr>
+    </table>
+    <script src="./javascript_file/manage_system.js"></script>
+</body>
+</html>
