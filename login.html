@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登陆页面</title>
+
+    <style>
+        body{
+            background: #e2ebf9;
+        }
+        .title{
+            position:relative;
+            background: #1d519c url(./css_element/head_bg.jpg) no-repeat center top;
+            font-size:25px;
+            height: 78px;
+            margin-bottom:25px;
+            padding: 5px 100px 50px;
+        }
+        .title .title_login{
+            color:whitesmoke;
+            text-align: left;
+            white-space: nowrap;
+        }
+        .input_bar{
+            font-size: 20px;
+            text-align: center;
+        }
+        .button:hover{
+            background-color:antiquewhite;
+        }
+    </style>
+
+    <script src="./javascript_file/register.js"></script>
+</head>
+<body>
+    <div class="title">
+        <h1 class = "title_login">
+            教学管理系统-账号登陆
+        </h1>
+    </div>
+    <div class = "input_bar">
+    <!-- <form name="login" action="" onsubmit="return validateForm(this)"> -->
+    <form name="login" id='loginForm'>
+        <label for="username">账号：</label>
+        <input type="text" name="username" id = "username" placeholder="请输入账号">
+        <br>
+        <br>
+        <label for="password">密码：</label>
+        <input type="password" name="password" id = "password" placeholder="请输入密码">
+        <br>
+        <br>
+        <div>
+            <button type="submit">登录</button>
+            <script src="./javascript_file/login.js"></script>
+            <br>
+            <br>
+            <a name = "register" class="button" onclick="clickregister()" href="" style="font-size: small;">没有账号？注册</a>
+        </div>
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生系统</title>
+    <style>
+        body{
+            background: #e2ebf9;
+        }
+        ul ,.navigate{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #214a83;
+        }
+        li {
+            float: left;
+        }
+        li a{
+            cursor: pointer
+        }
+        li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 50px;
+            text-decoration: none;
+        }
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+        .title{
+            position:relative;
+            background: #1d519c url(./css_element/head_bg.jpg) no-repeat center top;
+            font-size:25px;
+            height: 78px;
+            margin-bottom:1px;
+            padding: 5px 100px 50px;
+            color:whitesmoke;
+            text-align: left;
+            white-space: nowrap;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: #ddd;
+        }
+        button {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>学生系统</h1>
+    </div>
+    <ul>
+        <li>
+        <a onclick="location.href='login.html';">退出登录</a>
+        </li>
+        <li>
+            <a onclick="location.href='reque.html';">错题回顾</a>
+        </li>
+    </ul>
+        <table id="examListTable">
+            <tr>
+                <th>试卷名称</th>
+                <th>操作</th>
+            </tr>
+        </table>
+    
+        <script src="./javascript_file/student.js"></script>
+</body>
+</html>
